@@ -1,5 +1,5 @@
 
-import './style.css'
+import './style.scss'
 function Nav() {
   return (
     <nav className='menu'>

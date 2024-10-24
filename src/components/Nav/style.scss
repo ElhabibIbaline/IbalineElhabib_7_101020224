@@ -1,3 +1,5 @@
+@use '../../scss/variables.scss' as colors;
+
 .menu ul {
   padding: 1rem 0;
   display: flex;
@@ -9,10 +11,12 @@
   width: 100%;
 }
 
+
+
 .menu_link__home,
 .menu_link__about {
   padding-left: 1rem;
-  color: #ff6060;
+  color: colors.$color-primairy;
   text-decoration: none;
   list-style-type: none;
   padding-left: 1rem;

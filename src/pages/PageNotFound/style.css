@@ -1,0 +1,24 @@
+.errorPage {
+  color: #ff6060;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem auto;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 12rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  cursor: pointer;
+  font-size: 2rem;
+}
