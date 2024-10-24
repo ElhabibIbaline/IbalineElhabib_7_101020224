@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+  width: 90%;
+}
+
+
+@media screen and (width <=490px) {
+
+  header img {
+    width: 100%;
+  }
+}
