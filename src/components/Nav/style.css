@@ -12,11 +12,15 @@
 .menu_link__home,
 .menu_link__about {
   padding-left: 1rem;
-  color: red;
+  color: #ff6060;
   text-decoration: none;
   list-style-type: none;
   padding-left: 1rem;
   font-size: 2rem;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
 }
 
 .menu_link__home:hover {
@@ -33,23 +37,18 @@
   text-wrap-mode: nowrap
 }
 
-
-
 @media screen and (width <=768px) {
 
   .menu_link__home,
   .menu_link__about {
     font-size: 1rem;
     text-transform: uppercase;
-
   }
 
   header ul {
     width: 200px;
     width: 100%;
   }
-
-
 }
 
 @media screen and (width <=360px) {

@@ -8,9 +8,11 @@ header {
   width: 90%;
 }
 
+header .logo {
+  cursor: pointer;
+}
 
 @media screen and (width <=490px) {
-
   header img {
     width: 100%;
   }
