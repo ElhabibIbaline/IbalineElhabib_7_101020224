@@ -1,0 +1,18 @@
+.footer {
+  background-color: var(--bg-color-footer);
+  color: var(--secondary);
+  padding: 20px;
+  min-height: 200px;
+  font-weight: 500;
+
+  &.footer_text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (width <=768px) {
+  .footer_text {
+    font-size: .9rem;
+    padding: 0;
+  }
+}

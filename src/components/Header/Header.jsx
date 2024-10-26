@@ -1,13 +1,13 @@
 
-import './style.css'
+import styles from './Header.module.scss'
 
-import logo from '../../assets/logo/.LOGO.svg'
-import Nav from '../Nav/Nav'
+import logo from '../../assets/logo/logo.svg'
+import Nav from './Nav/Nav.jsx'
 function Header() {
   return (
-    <header>
-      <div className="logo">
-        <img src={logo} alt="logo" />
+    <header className={styles.header}>
+      <div className={`my-20`}>
+        <img className={styles.img}  src={logo} alt="logo" />
         {/* <img src="../../src/assets/logo.png" alt="logo" /> */}
       </div>
 

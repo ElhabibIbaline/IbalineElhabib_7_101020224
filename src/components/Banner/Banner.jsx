@@ -1,11 +1,14 @@
-import './style.css'
+import styles from './Banner.module.scss'
 
-function Banner() {
+function Banner({ image, text }) {
   return (
-    <div className='banner'>
-      {/* img src="../../src/assets/Background.jpg" alt="banner" /> */}
-      <h1>Chez vous, partout et ailleurs </h1>
+    <div className={styles.content}>
+      <div className={styles.banner}>
+        <img className={styles.img} src={image} alt="banner" />
 
+      </div>
+
+      <h1 className={styles.h1}>{text} </h1>
     </div>
   )
 }

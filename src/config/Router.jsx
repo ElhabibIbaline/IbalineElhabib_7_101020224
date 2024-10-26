@@ -2,18 +2,18 @@
 import {
   createBrowserRouter,
 } from "react-router-dom";
-import Home from "../pages/home/Home";
-import PageNotFound from "../pages/PageNotFound/PageNotFound";
+import Homepage from "../pages/Homepage/Homepage.jsx";
+import PageNotFound from "../pages/PageNotFound/PageNotFound.jsx";
 
 
 const Router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Homepage />,
   },
   {
     path: "/accueil",
-    element: <Home/>,
+    element: <Homepage />,
   },
   {
     path: "/logement",
@@ -25,7 +25,7 @@ const Router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <PageNotFound/>,
+    element: <PageNotFound />,
   },
 ]);
 

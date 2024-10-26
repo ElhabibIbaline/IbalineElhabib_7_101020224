@@ -1,5 +1,5 @@
 
-import './style.css'
+import './Card.module.scss'
 function Card() {
   return (
     <div className="card">

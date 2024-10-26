@@ -5,15 +5,10 @@ header {
   align-items: center;
   gap: 1rem;
   margin: auto;
-  width: 90%;
-}
+  width: 1240px;
+  max-width: 100%;
 
-header .logo {
-  cursor: pointer;
-}
-
-@media screen and (width <=490px) {
-  header img {
-    width: 100%;
+  & img {
+    min-width: 100px;
   }
 }
