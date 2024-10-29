@@ -1,15 +1,24 @@
+// .nav ul li {
+//   text-decoration: none;
+//   list-style: none;
+//   list-style-type: none;
+// }
+link {
+  text-decoration-line: none;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}
+
 .home,
 .about {
   padding-left: 1rem;
   color: var(--primary);
-  text-decoration: none;
-  list-style-type: none;
   padding-left: 1rem;
   font-size: 2rem;
-  font-family: "Roboto", serif;
   font-weight: 500;
-  font-style: normal;
   cursor: pointer;
+  text-decoration-line: none;
 }
 
 .home:hover,

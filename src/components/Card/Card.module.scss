@@ -11,14 +11,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-
-
 }
 
 .image {
   width: 100%;
   height: 100%;
-
   object-fit: fill;
   border-radius: 10px;
   transform: scale(1);
@@ -27,15 +24,16 @@
 }
 
 
-.h3 {
-  // width: 50%;
+.title {
   margin-inline-start: 0.5rem;
   margin-block-end: 0.5rem;
   color: white;
   font-weight: 300;
   font-style: normal;
-  background-color: black;
+  // background-color: black;
   padding: 10px;
+  // font-family: var(--font-family);
+  font-weight: 500;
 }
 
 

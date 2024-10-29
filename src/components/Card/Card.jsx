@@ -9,12 +9,12 @@ function Card({ image, title }) {
   console.log(" console log de Card ", image, title)
 
   return (
-    <Link to="/logement">
+    <Link to="/logement" style={{ textDecoration: 'none', fontFamily: 'roboto' }}>
       <div className={styles.card}>
         <div >
           <img className={styles.image} src={image} alt="appart" />
         </div>
-        <h3 className={styles.h3}> {title} </h3>
+        <h3 className={styles.title}> {title} </h3>
       </div>
 
     </Link>
