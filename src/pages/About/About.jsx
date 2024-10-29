@@ -11,10 +11,10 @@ function About() {
       <Header />
       <Banner image={imageAbout} text="" />
       <div className={` d-flex flex-column mb-20 ${styles.collapse}`}>
-        <Collapse />
-        <Collapse />
-        <Collapse />
-        <Collapse />
+        <Collapse title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulierement vérifiées par nos équipes" />
+        <Collapse title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
+        <Collapse title="Service" content="Nos équipes se tiennent  votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." />
+        <Collapse title="Sécurité" content="La sécurité est la priorité de Kasa. Aussi bien pou nos hotes que les voyageurs, chaque logement correspond aux critéres de sécurité etablis par nos services. En laissant une note aussi bien à ll'hote qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hotes." />
       </div>
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 .collapse {
   width: 80%;
   margin: auto;
+  display: flex;
 }
 
 .logement_description h4,
@@ -16,7 +17,7 @@
   background-color: var(--primary);
   color: white;
   padding: 0.2rem 1em;
-  border-radius: 0.7rem;
+  border-radius: 5PX;
 
   i {
     font-size: 2rem;
@@ -33,7 +34,7 @@
   line-height: 30px;
   font-weight: 700;
   padding: 1em 1.7em;
-  border-radius: 0.7rem;
+  border-radius: 5PX;
   position: relative;
   top: -0.3rem;
   z-index: -1;

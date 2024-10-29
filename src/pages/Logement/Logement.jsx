@@ -26,9 +26,10 @@ function Logement() {
           </div>
         </div>
 
+
         <div className={`d-flex j-c-c a-i-c j-c-sb ${styles.collapse}`}>
-          <Collapse />
-          <Collapse />
+          <Collapse title="Description" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum eligendi, quis perspiciatisamet laboriosam totam facilis dignissimos iure!" />
+          <Collapse title="Equippement" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum eligendi, quis perspiciatisamet laboriosam totam facilis dignissimos iure!" />
         </div>
       </div>
 

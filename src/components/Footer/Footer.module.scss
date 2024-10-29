@@ -11,6 +11,10 @@
 }
 
 @media screen and (width <=768px) {
+  .footer {
+    margin-top: 25px;
+  }
+
   .footer_text {
     font-size: .9rem;
     padding: 0;

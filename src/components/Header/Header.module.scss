@@ -12,3 +12,9 @@ header {
     min-width: 100px;
   }
 }
+
+@media screen and (width <=768px) {
+  header {
+    max-width: 85%;
+  }
+}
