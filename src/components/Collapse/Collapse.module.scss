@@ -1,0 +1,49 @@
+.logement_description h4,
+.logement_equipement h4 {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 0.7rem;
+}
+
+.descriptionTitle,
+.equipementTitle {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.2rem 1em;
+  border-radius: 0.7rem;
+
+  i {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.logement_description p,
+.logement_equipement ul {
+  background-color: var(--bg-color-collapse);
+  height: 150px;
+  font-size: 1rem;
+  margin-block: 0;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 1em 1.7em;
+  border-radius: 0.7rem;
+  position: relative;
+  top: -0.3rem;
+  z-index: -1;
+}
+
+// .logement_equipement {
+//   width: 45%;
+// }
+
+.logement_equipement h4 {
+  background-color: var(--primary);
+  color: white;
+}
+
+.logement_equipement p {
+  background-color: var(--bg-color-collapse);
+  margin-block: 0;
+}

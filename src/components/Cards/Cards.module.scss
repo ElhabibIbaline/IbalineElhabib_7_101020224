@@ -1,13 +1,15 @@
 .cards {
-  background-color: rgb(244, 240, 240);
+  background-color: var(--bg-color-gallery);
   min-height: 50vh;
-  border-radius: 2rem;
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 20px;
+  padding: 30px;
   justify-content: space-between;
-  margin: 1.5rem auto;
+  margin: auto;
+  width: 1240px;
+  max-width: 100%;
 }
 
 @media screen and (width <=768px) {
