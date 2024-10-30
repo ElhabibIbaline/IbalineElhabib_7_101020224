@@ -5,16 +5,19 @@ import styles from './Card.module.scss'
 
 
 
-function Card({ image, title }) {
-  console.log(" console log de Card ", image, title)
-
+function Card(props) {
+  // console.log(" console log de Card ", image, title)
+  const state = {
+    logementId: props.id
+  }
+    ;
   return (
-    <Link to="/logement" style={{ textDecoration: 'none'}}>
+    <Link to="/logement" state={state} style={{ textDecoration: 'none' }}>
       <div className={styles.card}>
         <div >
-          <img className={styles.image} src={image} alt="appart" />
+          <img className={styles.image} src={props.image} alt="appart" />
         </div>
-        <h3 className={styles.title}> {title} </h3>
+        <h3 className={styles.title}> {props.title} </h3>
       </div>
 
     </Link>

@@ -1,4 +1,4 @@
-
+// import { useParams } from "react-router-dom"
 import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
 import Collapse from "../../components/Collapse/Collapse.jsx"
@@ -7,29 +7,57 @@ import Host from "../../components/FicheLogement/Host.jsx"
 import Tag from "../../components/FicheLogement/Tag.jsx"
 import Star from "../../components/FicheLogement/Star.jsx"
 import Carrousel from "../../components/FicheLogement/Carrousel.jsx"
+// import DataFichLogement from "../../datas/kasa-data.json"
+import { useEffect, useState } from "react"
+import { useLocation } from "react-router-dom"
+// import PageNotFound from "../../pages/PageNotFound/PageNotFound"
+
 
 function Logement() {
+  const location = useLocation();
+  console.log("location", location)
+  console.log("our appartement id is", location.state.logementId)
+
+  const [flat, setFlat] = useState(null);
+
+  useEffect(fetchApparetementData, []);
+
+  function fetchApparetementData() {
+    fetch("data.json")
+      .then((res) => res.json())
+      .then((flats) => {
+        const flat = flats.find((flat) => flat.id === location.state.logementId);
+        setFlat(flat);
+      })
+      .catch(console.error);
+
+  }
+  if (flat === null) return <div>..loading</div>;
+
+
+
   return (
     <div>
       <Header />
       <div className={`my-20 ${styles.logement}`}>
         <div className="carrousel">
-          <Carrousel />
+          {/* selected flat:{JSON.stringify(flat)} */}
+          <Carrousel imageUrl={flat.cover} />
         </div>
         <div className={` d-flex j-c-sb ${styles.location}`}>
           <div className={`${styles.tag}`}>
-            <Tag />
+            <Tag flat={flat} />
           </div>
           <div className={` ${styles.host}`}>
-            <Host />
-            <Star />
+            <Host flat={flat} />
+            <Star flat={flat} />
           </div>
         </div>
 
 
         <div className={`d-flex j-c-c a-i-c j-c-sb ${styles.collapse}`}>
-          <Collapse title="Description" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum eligendi, quis perspiciatisamet laboriosam totam facilis dignissimos iure!" />
-          <Collapse title="Equippement" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum eligendi, quis perspiciatisamet laboriosam totam facilis dignissimos iure!" />
+          <Collapse title="Description" content={flat.description} />
+          <Collapse title="Equippement" content={flat.equipments} />
         </div>
       </div>
 

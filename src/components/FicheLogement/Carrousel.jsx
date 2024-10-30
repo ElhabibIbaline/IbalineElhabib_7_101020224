@@ -1,9 +1,9 @@
 import styles from './Carrousel.module.scss'
 
-function Carousel() {
+function Carousel(props) {
   return (
     <div className={styles.carrousel}>
-      <img src="https://picsum.photos/400/200" alt="carousel" />
+      <img src={props.imageUrl} alt="carousel" />
     </div>
   )
 }
