@@ -17,14 +17,16 @@
     font-size: 20px;
   }
 
-  & .collapse {
+  & .logement_collapse {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
+ gap: 25px;
+
+
   }
 
   @media screen and (width <=768px) {
-    .collapse {
-      display: flex;
+    .logement_collapse {
       flex-direction: column;
     }
 
@@ -37,8 +39,6 @@
 
     .location {
       display: flex;
-
-
       flex-direction: column;
       flex-basis: 100%;
     }

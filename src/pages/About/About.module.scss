@@ -1,8 +1,10 @@
-.collapse {
+.about_collapse {
   width: 1240px;
   max-width: 100%;
   margin: auto;
   gap: 20px;
   display: flex;
-  height: 500px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }

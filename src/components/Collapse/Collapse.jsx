@@ -11,24 +11,27 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className={` d-flex j-c-c j-c-sb flex-column ${styles.collapse}`}>
 
 
-      <div className={` d-flex a-i-c j-c-sb ${styles.descriptionTitle}`} >
-        <h4>{title} </h4>
-        <div onClick={display}>
+    <div className={`${styles.collapse_container}`}>
+      <div className={`${styles.collapse_title}`}>
+        <h2>{title}</h2>
+        <p onClick={display}>
           {isOpen ? (
             <i className="fas fa-chevron-up"></i>
-          ) : (<i className="fas fa-chevron-down"></i>)}
-        </div>
+          ) : (
+            <i className="fas fa-chevron-down"></i>
+          )}
+        </p>
       </div>
 
-      <div>
-        {isOpen && <p> {content} </p>}
+      <div className={`${styles.collapse_content}`}>
+        {isOpen && <p>{content}</p>}
       </div>
-
     </div>
+
   )
 }
 
 export default Collapse
+

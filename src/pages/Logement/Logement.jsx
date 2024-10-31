@@ -54,10 +54,9 @@ function Logement() {
           </div>
         </div>
 
-
-        <div className={`d-flex j-c-c a-i-c j-c-sb ${styles.collapse}`}>
-          <Collapse title="Description" content={flat.description} />
-          <Collapse title="Equippement" content={flat.equipments} />
+        <div className={` ${styles.logement_collapse}`}>
+         <Collapse title="Description" content={flat.description} />
+           <Collapse title="Equippement" content={flat.equipments.map((eq) => (<li>{eq}</li>))} />
         </div>
       </div>
 

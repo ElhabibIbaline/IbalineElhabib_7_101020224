@@ -10,13 +10,14 @@ function Home() {
   return (
     <>
       <Header />
+      
       {/* <Main/> */}
       <Banner image={image} text="Chez vous, partout et ailleurs" />
       <div className={`my-20`}>
         <Gallery />
       </div>
-      <Footer />
 
+      <Footer />
     </>
   )
 }

@@ -1,7 +1,5 @@
 
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter, } from "react-router-dom";
 import Homepage from "../pages/Homepage/Homepage.jsx";
 import PageNotFound from "../pages/PageNotFound/PageNotFound.jsx";
 import Logement from "../pages/Logement/Logement.jsx";
@@ -23,7 +21,7 @@ const Router = createBrowserRouter([
   },
   {
     path: "/about",
-    element: <About/>,
+    element: <About />,
   },
   {
     path: "*",
