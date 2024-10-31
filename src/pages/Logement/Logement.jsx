@@ -7,7 +7,6 @@ import Host from "../../components/FicheLogement/Host.jsx"
 import Tag from "../../components/FicheLogement/Tag.jsx"
 import Star from "../../components/FicheLogement/Star.jsx"
 import Carrousel from "../../components/FicheLogement/Carrousel.jsx"
-// import DataFichLogement from "../../datas/kasa-data.json"
 import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
 // import PageNotFound from "../../pages/PageNotFound/PageNotFound"
@@ -15,8 +14,8 @@ import { useLocation } from "react-router-dom"
 
 function Logement() {
   const location = useLocation();
-  console.log("location", location)
-  console.log("our appartement id is", location.state.logementId)
+  // console.log("location", location)
+  // console.log("our appartement id is", location.state.logementId)
 
   const [flat, setFlat] = useState(null);
 
@@ -55,8 +54,8 @@ function Logement() {
         </div>
 
         <div className={` ${styles.logement_collapse}`}>
-         <Collapse title="Description" content={flat.description} />
-           <Collapse title="Equippement" content={flat.equipments.map((eq) => (<li>{eq}</li>))} />
+          <Collapse title="Description" content={flat.description} />
+          <Collapse title="Equippement" content={flat.equipments.map((eq) => (<li>{eq}</li>))} />
         </div>
       </div>
 

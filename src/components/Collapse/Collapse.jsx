@@ -12,8 +12,8 @@ function Collapse({ title, content }) {
 
   return (
 
-
     <div className={`${styles.collapse_container}`}>
+
       <div className={`${styles.collapse_title}`}>
         <h2>{title}</h2>
         <p onClick={display}>

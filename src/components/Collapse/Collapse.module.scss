@@ -3,27 +3,28 @@
   flex-direction: column;
   width: 1240px;
   max-width: 100%;
+  overflow: hidden;
 
 }
 
 .collapse_title {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // justify-items: baseline;
   background-color: var(--primary);
   color: white;
   padding: 0.2rem 1em;
   border-radius: 5PX;
-  // width: 100%;
+  position: relative;
 
+  i {
+    font-size: 2rem;
+    cursor: pointer;
+  }
 }
 
 .collapse_title h2 {
-
   font-size: 1.2rem;
-
 }
 
 .collapse_content {
@@ -37,15 +38,15 @@
   font-size: 18px;
   width: 100%;
   z-index: -1;
-
-  animation: slide-in 0.5s ease-in-out;
+  animation: slide-in 1s ease-in-out;
 }
 
 @keyframes slide-in {
- 0% {
-    transform: translateY(-100%);
+  from {
+    transform: translatey(-100%);
   }
-100%{
-  transform: translate(0);
-}
+
+  to {
+    transform: translatey(0%);
+  }
 }
