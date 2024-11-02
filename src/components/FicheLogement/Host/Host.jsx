@@ -1,9 +1,4 @@
-
-// import starActive from "../../assets/starts/star-active.png"
-// import starInactive from "../../assets/starts/star-inactive.png"
-// import hosts from "../../assets/host/Host.png"
 import styles from "./Host.module.scss"
-// import Star from "./Star"
 
 function Host(props) {
   return (

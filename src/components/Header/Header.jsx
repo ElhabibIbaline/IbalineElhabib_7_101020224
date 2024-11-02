@@ -8,7 +8,6 @@ function Header() {
     <header className={styles.header}>
       <div className={`my-20`}>
         <img className={styles.img}  src={logo} alt="logo" />
-        {/* <img src="../../src/assets/logo.png" alt="logo" /> */}
       </div>
 
       <Nav />

@@ -1,5 +1,5 @@
-import starActive from "../../assets/starts/star-active.png"
-import starInactive from "../../assets/starts/star-inactive.png"
+import starActive from "../../../assets/starts/star-active.png"
+import starInactive from "../../../assets/starts/star-inactive.png"
 
 import styles from "./Star.module.scss"
 

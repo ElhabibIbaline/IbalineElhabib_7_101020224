@@ -15,7 +15,7 @@ function Tag(props) {
       </h3>
       <div className={`d-flex j-c-c a-i-c j-c-sb ${styles.logement_tag} `}>
         {flat.tags.map((tag) => (
-          <p>   {tag}  </p>
+          <p key={tag} >{tag}</p>
         ))}
 
       </div>
