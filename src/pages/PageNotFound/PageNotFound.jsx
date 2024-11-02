@@ -1,13 +1,13 @@
 
 import './PageNotFound.module.scss'
-import Header from "../../components/Header/Header"
-import Footer from '../../components/Footer/Footer'
+// import Header from "../../components/Header/Header"
+// import Footer from '../../components/Footer/Footer'
 import { Link } from 'react-router-dom'
 
 function PageNotFound() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       < div className='errorPage'>
         <h1>404 </h1>
         <h2> Oups! La page que vous demandez n existe pas</h2>
@@ -17,7 +17,7 @@ function PageNotFound() {
 
 
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

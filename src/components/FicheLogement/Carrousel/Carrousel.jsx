@@ -22,7 +22,6 @@ function Carrousel(props) {
   }
 
   return (
-    // <div>
 
     <div className={styles.slide}>
 
@@ -39,7 +38,7 @@ function Carrousel(props) {
 
       {pictures.map((image, index) => {
         return (
-         
+
           <div key={index} className={`${styles.slider} ${index === showImage ? styles.active : ''}`}>
             {index === showImage && (<img src={image} alt="logementImage" className={styles.slider_image} />
             )}
@@ -53,5 +52,3 @@ function Carrousel(props) {
 }
 
 export default Carrousel
-
- // className={`{index === showImage ? ${styles.slider} ${styles.active}  : ${styles.slider}}`}

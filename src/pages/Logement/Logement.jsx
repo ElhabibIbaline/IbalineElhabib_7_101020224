@@ -1,6 +1,5 @@
-// import { useParams } from "react-router-dom"
-import Footer from "../../components/Footer/Footer"
-import Header from "../../components/Header/Header"
+// import Footer from "../../components/Footer/Footer"
+// import Header from "../../components/Header/Header"
 import Collapse from "../../components/Collapse/Collapse.jsx"
 import styles from "./Logement.module.scss"
 import Host from "../../components/FicheLogement/Host/Host.jsx"
@@ -37,7 +36,7 @@ function Logement() {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className={`my-20 ${styles.logement}`}>
 
         {/* ===================================================================================== */}
@@ -46,7 +45,7 @@ function Logement() {
         </div>
         {/* ======================================================================================= */}
 
-     {/* ======================================================================================= */}
+        {/* ======================================================================================= */}
         <div className={` d-flex j-c-sb ${styles.location}`}>
           <div className={`${styles.tag}`}>
             <Tag flat={flat} />
@@ -56,7 +55,7 @@ function Logement() {
             <Star flat={flat} />
           </div>
         </div>
- {/* ======================================================================================= */}
+        {/* ======================================================================================= */}
 
         <div className={` ${styles.logement_collapse}`}>
           <Collapse title="Description" content={flat.description} />
@@ -64,7 +63,7 @@ function Logement() {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

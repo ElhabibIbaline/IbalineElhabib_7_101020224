@@ -1,13 +1,11 @@
 import Card from '../Card/Card.jsx'
 import styles from "./Gallery.module.scss"
 import data from "../../datas/kasa-data.json"
-// import { Link } from 'react-router-dom';
 
 
 function Gallery() {
 
   const logements = data;
-
 
   return (
     <div className={styles.cards}>

@@ -8,7 +8,6 @@ function Star(props) {
   const rating = props.flat.rating;
   const notes = [1, 2, 3, 4, 5];
 
-
   return (
     <div className={`d-flex j-c-c a-i-c j-c-sb ${styles.stars}`}>
 
@@ -20,12 +19,7 @@ function Star(props) {
             key={note.toString()} src={starInactive} alt="star" />
         )
       )}
-
-      {/* <img src={starActive} alt="etoile" />
-      <img src={starActive} alt="etoile" />
-      <img src={starActive} alt="etoile" />
-      <img src={starInactive} alt="start inactive" />
-      <img src={starInactive} alt="start inactive" /> */}
+      
     </div>
   )
 }

@@ -2,7 +2,6 @@
 import styles from "./Tag.module.scss"
 
 function Tag(props) {
-  // console.log("props", props)
 
   const flat = props.flat
   return (
