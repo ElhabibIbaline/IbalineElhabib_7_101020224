@@ -9,12 +9,11 @@ function Card(props) {
   }
   return (
     <Link to="/logement" state={state} style={{ textDecoration: 'none' }}>
-      <div className={`b4 ${styles.card}`}>
+      <div className={` ${styles.card}`}>
         <img className={styles.image} src={props.image} alt="appart" />
         <div className={styles.card_overlay}></div>
         <h3 className={styles.title}> {props.title} </h3>
       </div>
-
     </Link>
 
   )

@@ -6,28 +6,23 @@ function Collapse({ title, content }) {
 
   const [isOpen, setIsopen] = useState(false)
 
-  const display = () => {
+  const toggleCollapse = () => {
     setIsopen(!isOpen);
   };
 
   return (
 
-    <div className={`${styles.collapse_container}`}>
+    <div className={` ${styles.collapse_container} ${isOpen ? styles.open : ''}`}>
 
-      <div className={`${styles.collapse_title}`}>
+      <div className={`${styles.collapse_title}`} onClick={toggleCollapse}>
         <h2>{title}</h2>
-        <p onClick={display}>
-          {isOpen ? (
-            <i className="fas fa-chevron-up"></i>
-          ) : (
-            <i className="fas fa-chevron-down"></i>
-          )}
-        </p>
+        <i className={`fas ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
       </div>
 
-      <div className={`${styles.collapse_content}`}>
-        {isOpen && <p>{content}</p>}
-      </div>
+      {isOpen && (<div className={`${styles.collapse_content}`}>
+        <p>{content}</p>
+      </div>)
+      }
     </div>
 
   )

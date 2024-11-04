@@ -7,11 +7,11 @@ function Layout() {
   return (
     <>
       <Header />
-      <main>
+      <main className="m-20" style={{ minHeight: '100vh' }} >
         <Outlet />
       </main>
-
       <Footer />
+
     </>
   )
 }

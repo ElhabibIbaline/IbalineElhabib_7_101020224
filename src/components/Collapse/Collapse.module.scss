@@ -1,44 +1,68 @@
 .collapse_container {
-  display: flex;
-  flex-direction: column;
   width: 1240px;
-  max-width: 100%;
+  max-width: 80%;
+  margin: 2rem auto;
+  border-radius: 8px;
   overflow: hidden;
-
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
 }
 
 .collapse_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px; // a voir sur la maquette
+  cursor: pointer;
   background-color: var(--primary);
-  color: white;
-  padding: 0.2rem 1em;
-  border-radius: 5PX;
-  position: relative;
-
-  i {
-    font-size: 2rem;
-    cursor: pointer;
-  }
+  color: var(--secondary);
+  height: 47px;
+  border-radius: 5px;
 }
 
 .collapse_title h2 {
-  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34.22px;
+  border-radius: 5PX;
+}
+
+.collapse_title i {
+  font-size: 24px;
+  transition: transform .5s ease;
 }
 
 .collapse_content {
   position: relative;
-  background-color: var(--bg-color-collapse);
-  line-height: 30px;
-  border-radius: 5PX;
-  list-style-type: none;
-  padding: 2px 15px;
-  font-weight: 400;
-  font-size: 18px;
-  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
   z-index: -1;
   animation: slide-in 1s ease-in-out;
+}
+
+.collapse_content p {
+
+  padding: 10px;
+  margin: 0;
+  background-color: var(--bg-color-collapse);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34.22px;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 15px;
+  top: 74px;
+}
+
+.open .collapse_content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.open .collapse_title i {
+  transform: rotate(180deg);
 }
 
 @keyframes slide-in {
@@ -49,4 +73,23 @@
   to {
     transform: translatey(0%);
   }
+}
+
+@media screen and (max-width: 768px) {
+
+  .collapse_title h2 {
+    font-size: 13px;
+    line-height: 18.57px;
+  }
+
+  .collapse_content p {
+    font-size: 12px;
+    line-height: 17.22px;
+
+  }
+
+  .collapse_title i {
+    font-size: 13px;
+  }
+
 }
