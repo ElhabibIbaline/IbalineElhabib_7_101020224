@@ -10,7 +10,7 @@ Démarrer le projet React et développer l’ensemble de l’application, les co
 
 
 # Back-end / data
-la personne en charge du back-end n'est pas encore été recrutée! En attendant il faut utiliser un [fichier json](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json) pour pouvoir construire le Front qui correspond.
+La personne responsable du back-end n'a pas encore été recrutée. En attendant, il est nécessaire d'utiliser un [fichier json](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json) pour pouvoir construire le Front qui correspond. pour avancer sur la construction du front-end correspondant. 
 
 # Design et maquettes
 Pour le design d'interface les maquettes du site sont sur [Figma](https://www.figma.com/design/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR?node-id=3-0) .
