@@ -1,11 +1,31 @@
-.home,
-.about {
-  padding-left: 1rem;
+.nav {
+  display: flex;
+
+}
+
+.NavLink_home {
   color: var(--primary);
   padding-left: 1rem;
-  font-size: 2rem;
   font-weight: 500;
+  font-size: 34px;
+  line-height: 34px;
   cursor: pointer;
+}
+
+.NavLink_about {
+  color: var(--primary);
+  text-decoration: none;
+  padding-left: 1rem;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 34px;
+  cursor: pointer;
+  text-wrap-mode: nowrap
+}
+
+.active {
+  text-decoration-line: underline;
+  background-color: gold;
 }
 
 .home:hover,
@@ -13,28 +33,23 @@
   text-decoration-line: underline;
 }
 
-.about {
-  text-wrap-mode: nowrap
-}
 
-@media screen and (width <=768px) {
+@media screen and (max-width:768px) {
 
-  .home,
-  .about {
-    font-size: 1rem;
+  .NavLink_about,
+  .NavLink_home {
+    font-size: 18px;
+    line-height: 20px;
     text-transform: uppercase;
   }
-
-  header ul {
-    width: 200px;
-    width: 100%;
-  }
 }
 
-@media screen and (width <=360px) {
-  .home,
-  .about {
-    font-size: 0.7rem;
+@media screen and (max-width:360px) {
+
+  .NavLink_about,
+  .NavLink_home {
+    font-size: 12px;
+    line-height: 17px;
   }
 
 }

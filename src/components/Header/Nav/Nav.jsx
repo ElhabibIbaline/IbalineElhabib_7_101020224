@@ -6,18 +6,14 @@ function Nav() {
 
   return (
 
-    <nav className={`${styles.nav}`} >
-      <ul className="d-flex">
-        <NavLink to="/" style={{ textDecoration: 'none' }} >
-          <li className={`${styles.home} `}>Accueil</li>
-        </NavLink>
-        <NavLink to="/about" style={{ textDecoration: 'none' }} >
-          <li className={`${styles.about}`}>A propos</li>
-        </NavLink>
+    <nav >
+      <ul className={`${styles.nav}`} >
+        <li> <NavLink to="/" className={styles.NavLink_home}>Accueil </NavLink></li>
+        <li> <NavLink to="/about" className={styles.NavLink_about}  >A propos</NavLink></li>
       </ul>
     </nav>
   )
-  
+
 }
 
 export default Nav

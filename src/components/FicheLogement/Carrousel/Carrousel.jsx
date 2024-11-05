@@ -42,21 +42,14 @@ function Carrousel(props) {
           <div key={index} className={`${styles.slider} ${index === showImage ? styles.active : ''}`}>
             {index === showImage && (<img src={image} alt="logementImage" className={styles.slider_image} />
             )}
-
             {index === showImage && pictures.length > 1 && (
               <p className={styles.counter}>
                 {showImage + 1}/{pictures.length}
               </p>
             )}
-
           </div>
-
-
         );
-
-
       })}
-
     </div>
 
   )

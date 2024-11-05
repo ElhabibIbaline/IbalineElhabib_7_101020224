@@ -21,11 +21,13 @@
 
 .title {
   position: absolute;
+  top: 72%;
   bottom: 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 25.67px;
-  margin: 15px 20px;
+  margin: 20px;
+  padding: 10px;
   box-sizing: inherit;
   color: var(--secondary);
 }
