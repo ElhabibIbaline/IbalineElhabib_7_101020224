@@ -5,14 +5,16 @@ function Tag(props) {
 
   const flat = props.flat
   return (
-    <div className={`my-30 ${styles.tag}`}>
-      <h1>
-        {flat.title}
-      </h1>
-      <h3>
-        {flat.location}
-      </h3>
-      <div className={`d-flex j-c-c a-i-c j-c-sb ${styles.logement_tag} `}>
+    <div className={` ${styles.tag}`}>
+      <div>
+        <h1 className={`${styles.tag_title}`}>
+          {flat.title}
+        </h1>
+        <h3 className={`${styles.tag_location}`}>
+          {flat.location}
+        </h3>
+      </div>
+      <div className={`${styles.tags} `}>
         {flat.tags.map((tag) => (
           <p key={tag} >{tag}</p>
         ))}

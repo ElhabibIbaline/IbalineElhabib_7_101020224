@@ -33,13 +33,13 @@ function Logement() {
   return (
     <div>
 
-      <div className={`my-20 ${styles.logement}`}>
+      <div className={`${styles.logement}`}>
 
         <div className="carrousel">
           <Carrousel pictures={flat.pictures} />
         </div>
 
-        <div className={` d-flex j-c-sb ${styles.location}`}>
+        <div className={`${styles.location}`}>
           <div className={`${styles.tag}`}>
             <Tag flat={flat} />
           </div>

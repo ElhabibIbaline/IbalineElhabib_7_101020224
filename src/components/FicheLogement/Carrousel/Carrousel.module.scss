@@ -5,7 +5,6 @@
   height: 30rem;
   margin: 2% 0;
   overflow: hidden;
-
 }
 
 .slider {
@@ -24,10 +23,6 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
-  // left: 0%;
-  // right: 0%;
-  // top: 0%;
-  // bottom: 0%;
   inset: 0;
   mix-blend-mode: normal;
   border-radius: 10px;
@@ -59,6 +54,35 @@
   left: 2%;
   height: 20px;
   width: 12px;
-  z-index: 10;
+  z-index: 5;
   cursor: pointer;
+}
+
+.counter {
+  position: absolute;
+  z-index: 9;
+  top: 83%;
+  left: 50%;
+  color: var(--secondary);
+  width: 100px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  // color: var(--primary);
+}
+
+
+@media screen and (max-width: 768px) {
+  .counter {
+    font-style: 18px;
+    left: 38%;
+    top: 89%;
+    font-size: 18px;
+  }
+
+  .right,
+  .left {
+    font-size: 18px;
+  }
 }

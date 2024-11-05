@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <main className="m-20" style={{ minHeight: '100vh' }} >
+      <main className="mx-20" style={{ minHeight: '100vh' }} >
         <Outlet />
       </main>
       <Footer />

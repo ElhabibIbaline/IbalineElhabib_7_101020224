@@ -77,6 +77,11 @@
 
 @media screen and (max-width: 768px) {
 
+  .collapse_container {
+    max-width: 100%;
+    margin: 40px auto;
+  }
+
   .collapse_title h2 {
     font-size: 13px;
     line-height: 18.57px;

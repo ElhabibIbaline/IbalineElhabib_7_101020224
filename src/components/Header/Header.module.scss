@@ -7,14 +7,29 @@ header {
   margin: auto;
   width: 1240px;
   max-width: 100%;
+  padding: 10px 0;
 
   & img {
     min-width: 100px;
+
   }
 }
 
-@media screen and (width <=768px) {
+@media screen and (max-width:992px) {
   header {
-    max-width: 85%;
+    padding: 30px;
   }
 }
+
+@media screen and (max-width:768px) {
+  header {
+    margin: 0 auto;
+    gap: 1rem;
+  }
+}
+
+// @media screen and (max-width:768px) {
+//   header {
+//     max-width: 80%;
+//   }
+// }

@@ -1,21 +1,28 @@
 .logement {
   width: 1240px;
   max-width: 100%;
-  margin: 2rem auto;
+  min-height: 100vh;
+  margin: 3rem auto;
   font-weight: 200;
 
-  & .logement_collapse {
+  .logement_collapse {
+    // background-color: yellow;
+    display: flex;
+    gap: 20px;
+
+  }
+
+  .location {
     display: flex;
     justify-content: space-between;
- gap: 20px;
-
-
   }
 
   @media screen and (max-width:768px) {
     .logement_collapse {
+      // flex-wrap: wrap;
       flex-direction: column;
-  // gap: 5px;
+      justify-content: space-around;
+      align-items: flex-start;
     }
 
     .host {

@@ -9,7 +9,7 @@ function Star(props) {
   const notes = [1, 2, 3, 4, 5];
 
   return (
-    <div className={`d-flex j-c-c a-i-c j-c-sb ${styles.stars}`}>
+    <div className={`${styles.stars}`}>
 
       {notes.map((note) =>
         rating >= note ? (
@@ -19,7 +19,7 @@ function Star(props) {
             key={note.toString()} src={starInactive} alt="star" />
         )
       )}
-      
+
     </div>
   )
 }
