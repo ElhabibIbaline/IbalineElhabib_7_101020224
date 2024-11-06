@@ -8,7 +8,6 @@ function Header() {
 
   return (
     <header className={styles.header}>
-
       <div className={`my-20`}>
         <NavLink to='/'>    <img className={styles.img} src={logo} alt="logo" /> </NavLink>
       </div>
