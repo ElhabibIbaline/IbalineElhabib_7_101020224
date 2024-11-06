@@ -34,7 +34,7 @@ Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
 
 # Les technologies utilisées
 ![alt text](public/images/html5.svg)
-![alt text](<public/images/css-3 (1).png>)
+![alt text](public/images/css-3.png)
 ![alt text](public/images/sass.svg)
 
 ![alt text](public/images/javascript.svg)
