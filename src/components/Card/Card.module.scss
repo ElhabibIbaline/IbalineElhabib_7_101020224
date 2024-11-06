@@ -1,12 +1,20 @@
 .card {
-  // width: 340px;
   max-width: 100%;
   height: 340px;
   position: relative;
   margin-bottom: 20px;
   border-radius: 10px;
-  // animation: fadeInUp 600ms ease-in-out;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  // &:active {
+  //   transform: translateY(0px) scale(0.98);
+  //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  // }
 }
 
 .image {
@@ -14,10 +22,14 @@
   height: inherit;
   object-fit: cover;
   border-radius: inherit;
+  transition: transform 0.3s ease;
   // transform: scale(1);
   // transition: transform 300ms;
 }
 
+.card:hover .image {
+  transform: scale(1.1); // Zoom léger sur l'image au survol
+}
 
 .title {
   position: absolute;
@@ -32,7 +44,6 @@
   color: var(--secondary);
 }
 
-
 .card_overlay {
   position: absolute;
   top: 0;
@@ -40,11 +51,11 @@
   width: 100%;
   border-radius: inherit;
   background: var(--linear-card);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 
 }
+.card:hover .card_overlay {
+  opacity: 1;
+}
 
-// .card:hover {
-//   .card_img {
-//     transform: scale(1.01);
-//   }
-// }

@@ -1,5 +1,5 @@
 header {
-  background: #000;
+  // background: #000;
   display: flex;
   justify-content: space-between;
   justify-items: center;
@@ -8,8 +8,10 @@ header {
   max-width: 100%;
   margin: auto;
   padding: 20px;
+  
 
   & img {
     min-width: 100px;
+    padding-right: 25px;
   }
 }

@@ -21,28 +21,3 @@ const Router = createBrowserRouter([
   }
 ])
 export default Router
-
-// const Router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Homepage />,
-//   },
-//   {
-//     path: "/accueil",
-//     element: <Homepage />,
-//   },
-//   {
-//     path: "/logement",
-//     element: <Logement />,
-//   },
-//   {
-//     path: "/about",
-//     element: <About />,
-//   },
-//   {
-//     path: "*",
-//     element: <PageNotFound />,
-//   },
-// ]);
-
-// export default Router

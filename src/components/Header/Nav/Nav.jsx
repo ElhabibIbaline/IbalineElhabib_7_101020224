@@ -7,9 +7,9 @@ function Nav() {
   return (
 
     <nav >
-      <ul className={`${styles.nav}`} >
-        <li> <NavLink to="/" className={styles.NavLink_home}>Accueil </NavLink></li>
-        <li> <NavLink to="/about" className={styles.NavLink_about}  >A propos</NavLink></li>
+      <ul className={styles.nav} >
+        <li> <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : '')}>Accueil </NavLink></li>
+        <li> <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : '')}  >A propos</NavLink></li>
       </ul>
     </nav>
   )

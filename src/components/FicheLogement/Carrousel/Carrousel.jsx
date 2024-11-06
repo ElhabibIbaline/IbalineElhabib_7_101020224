@@ -40,7 +40,16 @@ function Carrousel(props) {
       {pictures.map((image, index) => {
         return (
           <div key={index} className={`${styles.slider} ${index === showImage ? styles.active : ''}`}>
-            {index === showImage && (<img src={image} alt="logementImage" className={styles.slider_image} />
+            {index === showImage && 
+            (<img 
+              src={image} 
+              alt="logementImage" 
+              className={styles.slider_image} 
+              // className={`${styles.slider_image} ${index === showImage ? 'slide-in' : ''}`} 
+              />
+
+             
+
             )}
             {index === showImage && pictures.length > 1 && (
               <p className={styles.counter}>

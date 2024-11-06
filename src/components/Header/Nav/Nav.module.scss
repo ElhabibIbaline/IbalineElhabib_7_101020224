@@ -1,55 +1,51 @@
 .nav {
   display: flex;
-
+  gap: 20px;
+  list-style: none;
 }
 
-.NavLink_home {
-  color: var(--primary);
-  padding-left: 1rem;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 34px;
-  cursor: pointer;
+.nav li {
+  list-style: none;
+color: var(--primary);
+    text-decoration: none;
+    padding-left: 1rem;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    text-wrap-mode: nowrap
 }
 
-.NavLink_about {
-  color: var(--primary);
+.nav a {
   text-decoration: none;
-  padding-left: 1rem;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 34px;
-  cursor: pointer;
-  text-wrap-mode: nowrap
+  color: var(--primary);
+  transition: color 0.3s ease;
 }
 
-.active {
-  text-decoration-line: underline;
-  background-color: gold;
+.nav a:hover {
+font-weight: 700;
 }
 
-.home:hover,
-.about:hover {
-  text-decoration-line: underline;
+nav li .active {
+  text-decoration: underline;
 }
-
 
 @media screen and (max-width:768px) {
-
-  .NavLink_about,
-  .NavLink_home {
+  .nav li {
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase;
+    text-wrap-mode: nowrap;
+    padding-left: 10px;    
   }
 }
 
 @media screen and (max-width:360px) {
-
-  .NavLink_about,
-  .NavLink_home {
+  .nav li  {
     font-size: 12px;
     line-height: 17px;
+    padding: 0;
+    
   }
-
 }
