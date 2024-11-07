@@ -33,23 +33,23 @@ function Logement() {
   return (
     <div>
 
-      <div className={`${styles.logement}`}>
+      <div className={styles.logement}>
 
         <div className="carrousel">
           <Carrousel pictures={flat.pictures} />
         </div>
 
-        <div className={`${styles.location}`}>
-          <div className={`${styles.tag}`}>
+        <div className={styles.location}>
+          <div className={styles.tag}>
             <Tag flat={flat} />
           </div>
-          <div className={` ${styles.host}`}>
+          <div className={styles.host}>
             <Host flat={flat} />
             <Star flat={flat} />
           </div>
         </div>
 
-        <div className={` ${styles.logement_collapse}`}>
+        <div className={styles.logement_collapse}>
           <Collapse title="Description" content={flat.description} />
           <Collapse title="Equippement" content={flat.equipments.map((eq) => (<li key={eq} >{eq}</li>))} />
         </div>

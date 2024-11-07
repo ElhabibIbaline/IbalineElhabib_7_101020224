@@ -8,15 +8,9 @@ import { StrictMode } from 'react'
 import './styles/index.scss'
 
 
-
-
 createRoot(document.getElementById('root')).render(
 
 <StrictMode>
     <RouterProvider router={Router} />
 </StrictMode>
-
-
-
-
 )

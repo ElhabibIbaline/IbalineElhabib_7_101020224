@@ -3,7 +3,7 @@ import NoPage from '../../components/Error/NoPage'
 import './ErrorPage.module.scss'
 
 
-function PageNotFound() {
+function ErrorPage() {
   return (
     <>
       <NoPage />
@@ -11,4 +11,4 @@ function PageNotFound() {
   )
 }
 
-export default PageNotFound
+export default ErrorPage

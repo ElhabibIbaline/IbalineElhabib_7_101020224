@@ -14,7 +14,7 @@ function About() {
 
     <div>
       <Banner image={imageAbout} text="" />
-      <div className={`${styles.about_collapse}`}>
+      <div className={styles.about_collapse}>
         <Collapse title="Fiabilité" content={Fiabilité} />
         <Collapse title="Respect" content={Respect} />
         <Collapse title="Service" content={Service} />

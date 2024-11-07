@@ -14,9 +14,13 @@ function Collapse({ title, content }) {
 
     <div className={` ${styles.collapse_container} ${isOpen ? styles.open : ''}`}>
 
-      <div className={`${styles.collapse_title}`} onClick={toggleCollapse}>
+      <div className={styles.collapse_title} onClick={toggleCollapse}>
         <h2>{title}</h2>
-        <i className={`fas ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`}></i>
+        <i className={`fas fa-chevron-down`}
+          style={{
+            transition: 'ease-in-out 0.5s',
+            transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)'
+          }} ></i>
       </div>
 
       {isOpen && (<div className={`${styles.collapse_content}`}>

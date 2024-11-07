@@ -30,7 +30,7 @@
 
 .collapse_title i {
   font-size: 24px;
-  transition: transform .5s ease;
+  // transition: transform .5s ease;
 }
 
 .collapse_content {
@@ -61,9 +61,6 @@
   opacity: 1;
 }
 
-.open .collapse_title i {
-  transform: rotate(180deg);
-}
 
 @keyframes slide-in {
   from {

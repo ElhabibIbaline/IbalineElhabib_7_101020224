@@ -14,9 +14,10 @@
   }
 }
 
-@media screen and (width <=768px) {
+@media screen and (max-width:768px) {
   .footer {
     margin-top: 25px;
+    max-width: 100%;
   }
 
   .footer_text {

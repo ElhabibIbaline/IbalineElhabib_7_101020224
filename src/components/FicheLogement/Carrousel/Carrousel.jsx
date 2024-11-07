@@ -45,11 +45,7 @@ function Carrousel(props) {
               src={image} 
               alt="logementImage" 
               className={styles.slider_image} 
-              // className={`${styles.slider_image} ${index === showImage ? 'slide-in' : ''}`} 
               />
-
-             
-
             )}
             {index === showImage && pictures.length > 1 && (
               <p className={styles.counter}>
