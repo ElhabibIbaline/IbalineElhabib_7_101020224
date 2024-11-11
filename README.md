@@ -1,9 +1,8 @@
 
-# ![alt text](public/images/logo.png)
-#
-![alt text](public/images/kasa_home.png)
 
-# Découvrez ce projet en live juste ici : [KASA](https://elhabibibaline.github.io/IbalineElhabib_7_101020224/)
+# ![alt text](public/images/kasa_home.png)
+
+# Découvrez ce projet en live juste ici : [kasa]()
 
 # Objectif
 Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) 

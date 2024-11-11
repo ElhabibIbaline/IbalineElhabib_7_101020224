@@ -1,7 +1,7 @@
 .collapse_container {
-  width: 1240px;
-  max-width: 80%;
-  margin: 2rem auto;
+  max-width: 1240px;
+  width: 80%;
+  margin: 30px auto;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -75,7 +75,7 @@
 @media screen and (max-width: 768px) {
 
   .collapse_container {
-    max-width: 100%;
+    width: 100%;
     margin: 40px auto;
   }
 
