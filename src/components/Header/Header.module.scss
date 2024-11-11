@@ -1,16 +1,34 @@
-header {
+.header {
+  // border: 1px solid greenyellow;
+  width: 1240px;
+  max-width: 100%;
+
+  height: 68px;
+  margin: 30px auto;
   display: flex;
   justify-content: space-between;
   justify-items: center;
   align-items: center;
-  width: 1240px;
-  max-width: 100%;
-  margin: auto;
-  padding: 20px;
-  
+  // padding: 0 30px;
+}
 
-  & img {
-    min-width: 100px;
-    padding-right: 25px;
+@media screen and (max-width:768px) {
+  .header {
+    height: 57px;
+    margin: 20px auto;
+    padding: 0 30px;
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width:368px) {
+  .header {
+    width: 335px;
+    height: 47px;
+    top: 20px;
+    left: 20px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 10px auto;
   }
 }

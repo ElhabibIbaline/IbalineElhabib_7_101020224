@@ -8,10 +8,10 @@ function Layout() {
   return (
     <>
       <Header className={styles.header} />
-      <main className={styles.layout}>
+      <main className={styles.main}>
         <Outlet />
       </main>
-      <Footer />
+      <Footer className={styles.footer} />
     </>
   )
 }
