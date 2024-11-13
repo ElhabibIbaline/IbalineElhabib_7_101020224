@@ -2,6 +2,8 @@ import Banner from "../../components/Banner/Banner"
 import imageAbout from '../../assets/background/banner-backgound-about.png';
 import Collapse from "../../components/Collapse/Collapse";
 import styles from './About.module.scss'
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 function About() {
 
@@ -13,13 +15,21 @@ function About() {
   return (
 
     <div>
-      <Banner image={imageAbout} text="" />
-      <div className={styles.about_collapse}>
-        <Collapse title="Fiabilité" content={Fiabilité} />
-        <Collapse title="Respect" content={Respect} />
-        <Collapse title="Service" content={Service} />
-        <Collapse title="Sécurité" content={Securité} />
+      <Header />
+
+
+      <div className={styles.main} >
+        <Banner image={imageAbout} text="" className={styles.banner}/>
+        <div className={styles.about_collapse}>
+          <Collapse title="Fiabilité" content={Fiabilité} />
+          <Collapse title="Respect" content={Respect} />
+          <Collapse title="Service" content={Service} />
+          <Collapse title="Sécurité" content={Securité} />
+        </div>
       </div>
+
+
+      <Footer />
     </div>
 
   )

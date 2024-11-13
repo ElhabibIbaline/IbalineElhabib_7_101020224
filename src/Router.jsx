@@ -1,31 +1,28 @@
-
-import { createBrowserRouter } from "react-router-dom";
-
-import Layout from './Layout/Layout.jsx'
+import { createBrowserRouter } from 'react-router-dom';
 import Homepage from "./pages/Homepage/Homepage.jsx";
-import PageNotFound from "./pages/ErrorPage/ErrorPage.jsx";
 import Logement from "./pages/Logement/Logement.jsx";
 import About from "./pages/About/About.jsx";
+import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
 
 const Router = createBrowserRouter([
-
   {
     path: "/",
-    element: <Layout />,
-    children: [
-      { index: true, element: <Homepage /> },
-      { path: "about", element: <About /> },
-      { path: "logement", element: <Logement /> },
-      { path: "*", element: <PageNotFound /> }
-    ],
+    element: <Homepage />,
+  },
+  {
+    // path: "/logement/:annonceId",  // Route dynamique pour chaque logement avec id
+    path: "/logement",  // Route dynamique pour chaque logement avec id
+    element: <Logement />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "*",
+    element: <ErrorPage />,
+  },
+]);
 
-  }
-],
-  // {
-  //   future: {
-  //     v7_partialHydration: true
-  //   }
-  // }
+export default Router;
 
-)
-export default Router

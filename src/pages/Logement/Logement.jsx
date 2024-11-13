@@ -7,6 +7,8 @@ import Star from "../../components/FicheLogement/Star/Star.jsx"
 import Carrousel from "../../components/FicheLogement/Carrousel/Carrousel.jsx"
 import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
+import Header from "../../components/Header/Header.jsx"
+import Footer from "../../components/Footer/Footer.jsx"
 
 
 function Logement() {
@@ -32,7 +34,7 @@ function Logement() {
 
   return (
     <div>
-
+<Header/>
       <div className={styles.logement}>
 
         <div className="carrousel">
@@ -54,7 +56,7 @@ function Logement() {
           <Collapse title="Equippement" content={flat.equipments.map((eq) => (<li key={eq} >{eq}</li>))} />
         </div>
       </div>
-
+<Footer/>
     </div>
   )
 }
