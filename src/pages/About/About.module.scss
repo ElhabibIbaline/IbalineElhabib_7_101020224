@@ -1,10 +1,13 @@
 .about_collapse {
+  // border: 1px solid red;
   width: 1240px;
-  max-width: 90%;
+  max-width: 95%;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   flex: 1 1 auto;
+  margin: 0 auto;
 }
 
 .main {
@@ -18,5 +21,6 @@
 
   .about_collapse {
     max-width: 100%;
+    max-height: 100%;
   }
 }

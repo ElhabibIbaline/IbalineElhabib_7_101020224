@@ -6,9 +6,9 @@ function Nav() {
 
   return (
     <nav className={styles.nav}>
-    <NavLink to="/" className={({ isActive }) => isActive ? `${styles.active} ${styles.accueil}` : styles.accueil}>Accueil</NavLink>
-    <NavLink to="/about" className={({ isActive }) => isActive ? `${styles.active} ${styles.about}` : styles.about}>A propos</NavLink>
-  </nav>
+      <NavLink to="/accueil" className={({ isActive }) => isActive ? `${styles.active} ${styles.accueil}` : styles.accueil}>Accueil</NavLink>
+      <NavLink to="/about" className={({ isActive }) => isActive ? `${styles.active} ${styles.about}` : styles.about}>A propos</NavLink>
+    </nav>
   )
 
 }

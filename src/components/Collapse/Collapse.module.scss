@@ -1,11 +1,11 @@
 .collapse_container {
   max-width: 1240px;
-  width: 80%;
-  margin: 30px auto;
+  width: 90%;
   border-radius: 8px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin: 20px auto;
   transition: all 0.3s ease;
+  // border: 1px solid rgb(77, 73, 73);
 }
 
 .collapse_title {
@@ -34,16 +34,17 @@
 }
 
 .collapse_content {
+
   position: relative;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   z-index: -1;
   animation: slide-in 1s ease-in-out;
+
 }
 
 .collapse_content p {
-
   padding: 10px;
   margin: 0;
   background-color: var(--bg-color-collapse);
@@ -76,7 +77,8 @@
 
   .collapse_container {
     width: 100%;
-    margin: 40px auto;
+    height: 100%;
+    margin: 20px auto;
   }
 
   .collapse_title h2 {

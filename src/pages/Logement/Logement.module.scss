@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   margin: auto;
-  padding: 0 30px;
+  padding: 0 20px 0 30px;
   font-weight: 200;
   // background-color: yellow;
 
@@ -18,10 +18,10 @@
   }
 
   @media screen and (max-width:768px) {
- 
-      .logement {
-        padding: 0 30px;
-      }
+
+    .logement {
+      padding: 0 30px;
+    }
 
 
     .logement_collapse {
