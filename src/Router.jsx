@@ -10,8 +10,8 @@ const Router = createBrowserRouter([
     element: <Homepage />,
   },
   {
-    // path: "/logement/:annonceId",  // Route dynamique pour chaque logement avec id
-    path: "/logement",  // Route dynamique pour chaque logement avec id
+    // path: "/logement",
+    path: "/logement/:logementId",
     element: <Logement />,
   },
   {
@@ -22,7 +22,9 @@ const Router = createBrowserRouter([
     path: "*",
     element: <ErrorPage />,
   },
-]);
+],
+
+);
 
 export default Router;
 

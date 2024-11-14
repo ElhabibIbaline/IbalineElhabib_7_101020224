@@ -3,12 +3,9 @@ import { Link } from 'react-router-dom'
 import styles from './Card.module.scss'
 
 function Card(props) {
-  // console.log(" console log de Card ", image, title)
-  const state = {
-    logementId: props.id
-  }
+
   return (
-    <Link to="/logement" state={state} style={{ textDecoration: 'none' }}>
+    <Link to={`/logement/${props.id}`} style={{ textDecoration: 'none' }}>
       <div className={styles.card}>
         <img className={styles.image} src={props.image} alt="appart" />
         <div className={styles.card_overlay}></div>
