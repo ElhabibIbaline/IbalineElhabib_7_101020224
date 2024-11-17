@@ -1,3 +1,13 @@
+.main {
+  max-width: 1240px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 30px;
+
+
+}
+
 .about_collapse {
   // border: 1px solid red;
   width: 1240px;
@@ -6,15 +16,6 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
-  margin: 0 auto;
-}
-
-.main {
-  max-width: 1240px;
-  width: 100%;
-  margin: auto;
-  padding: 0 30px;
 }
 
 @media screen and (max-width: 768px) {

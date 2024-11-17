@@ -1,43 +1,41 @@
+@use "../../../styles/media" as *;
+
 .host {
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-items: flex-end;
-}
-
-.host_name {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25.67px;
-}
-
-.host_img img {
-  width: 50px;
-  max-width: 100%;
-  border-radius: 50%;
-
-}
-
-@media screen and (max-width: 768px) {
-  .host_img img {
-    width: 40px;
-    max-width: 100%;
-  }
 
   .host_name {
-    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 17px;
-  }
-}
+    line-height: 25.67px;
 
-@media screen and (max-width: 365px) {
-  .host_img img {
-    width: 30px;
-    min-width: 30px;
+    @include xs {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+    }
   }
+
+  .host_img img {
+    width: 50px;
+    max-width: 100%;
+    border-radius: 50%;
+
+    @include m {
+      width: 40px;
+      max-width: 100%;
+    }
+
+    @include xs {
+      width: 30px;
+      min-width: 30px;
+    }
+  }
+
 }

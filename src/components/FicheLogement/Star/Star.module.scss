@@ -1,17 +1,17 @@
+@use "../../../styles/media" as *;
+
 .stars {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-@media screen and (max-width: 768px) {
-  .stars img {
-    width: 30px;
-  }
-}
+  & img {
+    @include m {
+      width: 30px;
+    }
 
-@media screen and (max-width: 365px) {
-  .stars img {
-    width: 20px;
+    @include xs {
+      width: 20px;
+    }
   }
 }

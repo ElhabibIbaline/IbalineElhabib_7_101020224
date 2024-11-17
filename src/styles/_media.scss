@@ -1,0 +1,52 @@
+// x small
+@mixin xs {
+  @media only screen and (max-width:500px) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@mixin m {
+  @media (min-width: 501px) and (max-width:991px) {
+    @content;
+  }
+}
+
+
+
+// large
+@mixin l {
+  @media only screen and (min-width:992px) {
+    @content;
+  }
+}
+
+
+
+
+// @media(max-width:500px) {
+//   body {
+//     background-color: #90e408;
+//   }
+// }
+
+// @media(min-width: 501px) and (max-width:767px) {
+//     body {
+//       background-color: orange;
+//     }
+//   }
+// @media(min-width: 768px) and (max-width:991px) {
+//     body {
+//       background-color: purple;
+//     }
+//   }
+// @media(min-width:992px) and (max-width:1199px) {
+//     body {
+//       background-color: teal;
+//     }
+//   }
+// @media(min-width:1200px) {
+//     body {
+//       background-color: rgb(0, 0, 0);
+//     }
+//   }

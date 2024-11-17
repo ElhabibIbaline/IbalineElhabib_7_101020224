@@ -1,44 +1,61 @@
+@use "../../styles/media" as *;
+
 .logement {
   max-width: 1240px;
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-direction: column;
+  float: 1;
   margin: auto;
   padding: 0 20px 0 30px;
   font-weight: 200;
-  // background-color: yellow;
+
+  @include m {
+    padding: 0 30px;
+  }
 
   .logement_collapse {
     display: flex;
     gap: 20px;
   }
+}
 
-  .location {
+.location {
+  display: flex;
+  justify-content: space-between;
+
+  @include xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 100%;
+    height: 100%;
+  }
+}
+
+.host {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include m {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    justify-items: flex-start;
   }
 
-  @media screen and (max-width:768px) {
-
-    .logement {
-      padding: 0 30px;
-    }
-
-
-    .logement_collapse {
-      display: block;
-    }
-
-    .host {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: row-reverse;
-    }
-
-    .location {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-    }
+  @include xs {
+    // background-color: #32c938;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    min-height: 50px;
+    height: 100%;
   }
 }

@@ -3,19 +3,27 @@ import styles from "./Tag.module.scss"
 
 function Tag(props) {
 
-  const flat = props.flat
+  // console.log('props', props)
+  const appart = props.flat
+
+
   return (
+
+
+
     <div className={styles.tag}>
-      <div>
-        <h1 className={styles.tag_title}>
-          {flat.title}
+      <div className={styles.tag_title}>
+        <h1 >
+          {appart.title}
         </h1>
-        <h3 className={styles.tag_location}>
-          {flat.location}
+      </div>
+      <div className={styles.tag_location}>
+        <h3 >
+          {appart.location}
         </h3>
       </div>
       <div className={styles.tags}>
-        {flat.tags.map((tag) => (
+        {appart.tags.map((tag) => (
           <p key={tag} >{tag}</p>
         ))}
 

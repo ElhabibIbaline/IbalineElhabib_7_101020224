@@ -1,5 +1,6 @@
 .card {
-  max-width: 100%;
+  width: 340px;
+  width: 100%;
   height: 340px;
   position: relative;
   margin-bottom: 20px;
@@ -12,51 +13,55 @@
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
+
+  & .image {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: inherit;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover .image {
+    transform: scale(1.1);
+  }
+
+  & .title {
+    position: absolute;
+    width: auto;
+    top: 80%;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    padding: 5px 10px;
+    box-sizing: inherit;
+    color: var(--secondary);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  & .card_overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: var(--linear-card);
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover .card_overlay {
+    opacity: 1;
+  }
+
 }
 
-.image {
-  width: inherit;
-  height: inherit;
-  object-fit: cover;
-  border-radius: inherit;
-  transition: transform 0.3s ease;
-}
-
-.card:hover .image {
-  transform: scale(1.1);
-}
-
-.title {
-  position: absolute;
-  width: auto;
-  top: 80%;
-  bottom: 0;
-  // left: -35%;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25.67px;
-  // margin: 10px;
-  padding: 5px 10px;
-  box-sizing: inherit;
-  color: var(--secondary);
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-}
-
-.card_overlay {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: inherit;
-  background: var(--linear-card);
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
-
-}
-
-.card:hover .card_overlay {
-  opacity: 1;
-}
+// @media screen and (max-width:450px) {
+//   .card {
+//     width: 335px;
+//     width: 100%;
+//   }
+// }

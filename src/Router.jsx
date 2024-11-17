@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate  } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import Homepage from "./pages/Homepage/Homepage.jsx";
 import Logement from "./pages/Logement/Logement.jsx";
 import About from "./pages/About/About.jsx";
@@ -7,14 +7,13 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage.jsx";
 const Router = createBrowserRouter([
   {
     path: "/",
-    element:<Navigate replace to="/accueil" />,
+    element: <Navigate replace to="/accueil" />,
   },
   {
     path: "/accueil",
     element: <Homepage />,
   },
   {
-    // path: "/logement",
     path: "/logement/:logementId",
     element: <Logement />,
   },

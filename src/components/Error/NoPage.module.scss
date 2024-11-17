@@ -1,101 +1,108 @@
+@use "../../styles/media" as *;
+
+
 .errorContainer {
-//  border:2px solid #825f5f;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   height: 100vh;
-  /* Centre verticalement et prend tout l'espace de l'écran */
   text-align: center;
   padding: 0 30px;
-}
 
-/* Style pour le numéro d'erreur */
-.errorNumber {
-  font-weight: 700;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  margin: 30px auto;
-  font-size: 288px;
-  line-height: 410.69px;
-  width: 597px;
-  height: 263px;
-
-  @media (max-width: 768px) {
-    /* Mobile version */
-    font-size: 150px;
-    line-height: 136.9px;
-    width: 298px;
-    height: 140px;
+  @include xs {
+    justify-content: flex-start;
+    margin-top: 200px;
   }
 
-  @media (max-width: 368px) {
-    /* Mobile version */
-    font-size: 96px;
-    line-height: 136.9px;
-    width: 198px;
-    height: 99px;
-    margin: -150px auto 20px auto;
+  .errorNumber {
+    font-weight: 700;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 30px auto;
+    font-size: 288px;
+    line-height: 410.69px;
+    width: 597px;
+    height: 263px;
+
+    @include m {
+      font-size: 150px;
+      line-height: 136.9px;
+      width: 298px;
+      height: 140px;
+    }
+
+    @include xs {
+      font-size: 96px;
+      line-height: 136.9px;
+      width: 198px;
+      height: 99px;
+      margin: -150px auto 20px auto;
+    }
   }
-}
 
-/* Style pour le message d'erreur */
-.errorMessage {
-  font-weight: 500;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  margin: 100px auto 150px auto;
+  .errorMessage {
+    font-weight: 500;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 100px auto 150px auto;
+    font-size: 36px;
+    line-height: 51.34px;
+    width: 872px;
+    height: 51px;
 
-  /* Desktop version */
-  font-size: 36px;
-  line-height: 51.34px;
-  width: 872px;
-  height: 51px;
+    @include m {
+      font-size: 22px;
+      line-height: 28.67px;
+      width: 460px;
+      max-width: 100%;
+      height: 72px;
+      text-align: center;
+      margin: 10px auto;
+    }
 
-  @media (max-width: 768px) {
-    /* Mobile version */
-    font-size: 15px;
+    @include xs {
+      font-size: 15px;
+      line-height: 25.67px;
+      width: 460px;
+      max-width: 100%;
+      margin: 10px auto;
+    }
+  }
+
+  .backButton {
+    font-weight: 500;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    padding: 0;
+    margin-bottom: 7rem;
+    font-size: 36px;
+    line-height: 51.34px;
+    width: 284px;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 25.67px;
-    width: 460px;
-    max-width: 100%;
-    height: 72px;
-    text-align: center;
-    margin: 10px auto;
+
+    @include m {
+      font-size: 14px;
+      line-height: 19.96px;
+      width: 221px;
+      max-width: 100%;
+      height: 20px;
+      margin: 3rem;
+    }
+
+    @include xs {
+      margin-top: 7rem;
+      font-size: 15px;
+    }
+
   }
-}
 
-/* Style pour le bouton de retour */
-.backButton {
-  font-weight: 500;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: inherit;
-  padding: 0;
-  margin-bottom:7rem;
-  font-size: 36px;
-  line-height: 51.34px;
-  width: 284px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 25.67px;
-
-
-
-  @media (max-width: 768px) {
-    /* Mobile version */
-    font-size: 14px;
-    line-height: 19.96px;
-    width: 221px;
-    max-width: 100%;
-    height: 20px;
-    margin:3rem;
-  }
-  @media (max-width: 368px) {
-    margin-top: 7rem;
-  }
 }
