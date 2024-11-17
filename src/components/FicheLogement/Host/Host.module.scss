@@ -12,13 +12,22 @@
     flex-direction: column;
     padding: 10px;
     font-size: 18px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 25.67px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 
     @include xs {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
-      line-height: 17px;
+      line-height: 17.11px;
+      text-align: right;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
     }
   }
 

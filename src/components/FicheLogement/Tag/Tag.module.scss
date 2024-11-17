@@ -7,6 +7,7 @@
   align-items: start;
   flex-direction: column;
   color: var(--primary);
+  // background-color: #d3c547;
 
   .tag_title h1 {
     font-size: 36px;
@@ -23,6 +24,13 @@
     @include xs {
       font-size: 18px;
       line-height: 26px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 25.67px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
     }
   }
 
@@ -34,13 +42,22 @@
     text-align: left;
 
     @include m {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 500;
       line-height: 20px;
+
     }
 
     @include xs {
+      font-family: Montserrat;
       font-size: 14px;
+      font-weight: 500;
+      line-height: 19.96px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-bottom: -10px;
+
     }
   }
 
@@ -50,7 +67,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 0;
+
 
     @include xs {
       align-items: start;
@@ -65,34 +82,33 @@
     border-radius: 20px;
     font-weight: 500;
     width: 115px;
-    height: 25px;
-    padding: 10px 15px 20px 15px;
+    padding: 5px 15px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 19.96px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     border-radius: 10px;
+    margin: 0;
 
     @include m {
       font-size: 12px;
       line-height: 14px;
-      padding: 10px;
+      padding: 5px 15px;
     }
 
     @include xs {
       font-size: 10px;
       line-height: 11px;
-      padding: 10px 15px 15px 15px;
+      padding: 7px 15px 14px 15px;
       width: 84px;
       height: 18px;
       border-radius: 10px;
       font-weight: 500;
-      line-height: 14.26px;
       text-align: center;
       text-underline-position: from-font;
       text-decoration-skip-ink: none;
+      // margin-top: -10px;
     }
   }
 

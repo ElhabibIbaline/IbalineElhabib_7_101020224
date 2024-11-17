@@ -5,7 +5,10 @@
 <!-- # Découvrez ce projet en live juste ici : [kasa]() -->
 
 # Objectif
-Démarrer le projet React et développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives !) 
+
+* Développer la nouvelle plateforme web de Kasa en tant que freelance. Kasa est l’un des leaders de la location d’appartements entre particuliers en France. Ma mission consiste à développer le coté front-end du site web en utilisant la bibliothèque React.js.
+
+* Démarrer le projet React et développer l’intégralité de l’application, y compris les composants React et les routes avec React Router, tout en respectant les maquettes fournies sur Figma.
 
 
 # Back-end / data
