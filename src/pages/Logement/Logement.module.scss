@@ -1,6 +1,6 @@
 @use "../../styles/media" as *;
 
-.logement {
+main {
   max-width: 1240px;
   width: 100%;
   min-height: 100vh;
@@ -17,9 +17,22 @@
     padding: 0 30px;
   }
 
+  @include xs {
+    width: 490px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+  }
+
   .logement_collapse {
     display: flex;
     gap: 20px;
+
+    @include xs {
+      width: 490px;
+      width: 100%;
+      flex-direction: column;
+    }
   }
 }
 

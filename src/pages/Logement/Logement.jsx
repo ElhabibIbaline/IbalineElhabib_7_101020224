@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react"
-// import { useLocation } from "react-router-dom"
 import { useParams, Navigate } from "react-router-dom";
 import Collapse from "../../components/Collapse/Collapse.jsx"
 import Host from "../../components/FicheLogement/Host/Host.jsx"
 import Tag from "../../components/FicheLogement/Tag/Tag.jsx"
 import Star from "../../components/FicheLogement/Star/Star.jsx"
 import Carrousel from "../../components/FicheLogement/Carrousel/Carrousel.jsx"
-// import ErrorPage from "../ErrorPage/ErrorPage.jsx";
 import Header from "../../components/Header/Header.jsx"
 import Footer from "../../components/Footer/Footer.jsx"
 import styles from "./Logement.module.scss"
@@ -20,9 +18,9 @@ function Logement() {
     fetch("/data.json")
       .then((res) => res.json())
       .then((flats) => {
-        console.log("Données chargées :", flats); // Vérifiez les données
+        // console.log("Données chargées :", flats); // Vérifiez les données
         const flat = flats.find((flat) => flat.id === logementId); // Utiliser logementId pour trouver le logement
-        console.log("Logement trouvé :", flat); // Vérifiez le logement trouvé
+        // console.log("Logement trouvé :", flat); // Vérifiez le logement trouvé
         if (flat) {
           setFlat(flat);
           setError(false);
@@ -37,17 +35,14 @@ function Logement() {
   }, [logementId]);
 
 
-  // if (error) return <ErrorPage />; // Affiche le composant ErrorPage en cas d'erreur
-
-  //  Si l'erreur est vraie redirige vers une page d'erreur avec Navigate 
-  if (error) return <Navigate to="/error" />; 
+  if (error) return <Navigate to="/error" />;
   if (flat === null) return <div>Chargement...</div>;
 
 
 
   return (
     <div>
-      <Header />
+      <Header disableUnderline={true} />
       <main>
 
         <div className={styles.logement}>
@@ -71,7 +66,7 @@ function Logement() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer className={styles.footer} />
     </div>
   )
 }

@@ -15,11 +15,9 @@ function About() {
   return (
 
     <div>
-      <Header />
-
-
+      <Header disableUnderline={true} />
       <div className={styles.main} >
-        <Banner image={imageAbout} text="" className={styles.banner}/>
+        <Banner image={imageAbout} text="" className={styles.banner} />
         <div className={styles.about_collapse}>
           <Collapse title="Fiabilité" content={Fiabilité} />
           <Collapse title="Respect" content={Respect} />
@@ -27,8 +25,6 @@ function About() {
           <Collapse title="Sécurité" content={Securité} />
         </div>
       </div>
-
-
       <Footer />
     </div>
 

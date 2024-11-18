@@ -18,13 +18,14 @@
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
-    padding: 0 30px;
+    // padding: 0 30px;
   }
 
   @include xs {
     // background-color: rgb(29, 23, 23);
-    width: 335px;
+    width: 490px;
     width: 100%;
+    padding: 0 15px;
     height: 47px;
     margin: 10px auto;
     gap: 0px;

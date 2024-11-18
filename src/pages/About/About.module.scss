@@ -1,3 +1,5 @@
+@use "../../styles/media" as *;
+
 .main {
   max-width: 1240px;
   width: 100%;
@@ -5,6 +7,12 @@
   margin: auto;
   padding: 0 30px;
 
+  @include xs {
+    width: 490px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+  }
 
 }
 
@@ -16,12 +24,11 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-}
 
-@media screen and (max-width: 768px) {
-
-  .about_collapse {
+  @include m {
     max-width: 100%;
-    max-height: 100%;
+  }
+  @include xs {
+    max-width: 100%;
   }
 }

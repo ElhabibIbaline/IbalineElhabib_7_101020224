@@ -1,7 +1,14 @@
-.main{
+@use "../../styles/media" as *;
+
+.main {
   width: 1240px;
   max-width: 100%;
   margin: auto;
   padding: 0 30px;
-}
 
+  @include xs {
+    width: 490px;
+    width: 100%;
+    padding: 0 15px;
+  }
+}

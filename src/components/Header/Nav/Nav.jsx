@@ -1,16 +1,28 @@
+import { NavLink } from 'react-router-dom';
+import styles from './Nav.module.scss';
 
-import { NavLink } from 'react-router-dom'
-import styles from './Nav.module.scss'
-
-function Nav() {
-
+function Nav({ disableUnderline }) {
   return (
     <nav className={styles.nav}>
-      <NavLink to="/accueil" className={({ isActive }) => isActive ? `${styles.active} ${styles.accueil}` : styles.accueil}>Accueil</NavLink>
-      <NavLink to="/about" className={({ isActive }) => isActive ? `${styles.active} ${styles.about}` : styles.about}>A propos</NavLink>
-    </nav>
-  )
+      {/* Lien Accueil */}
+      <NavLink
+        to="/accueil"
+        className={disableUnderline ? `${styles.accueil} ${styles['no-underline']}` : styles.accueil}
+      >
+        Accueil
+      </NavLink>
 
+      {/* Lien À propos */}
+      <NavLink
+        to="/about"
+        className={({ isActive }) =>
+          isActive ? `${styles.active} ${styles.about}` : styles.about
+        }
+      >
+        À propos
+      </NavLink>
+    </nav>
+  );
 }
 
-export default Nav
+export default Nav;
