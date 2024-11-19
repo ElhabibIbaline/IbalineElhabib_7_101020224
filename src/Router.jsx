@@ -14,6 +14,7 @@ const Router = createBrowserRouter([
     element: <Homepage />,
   },
   {
+    // Route dynamique /logement/:logementId affiche le composant Logement
     path: "/logement/:logementId",
     element: <Logement />,
   },
@@ -22,12 +23,21 @@ const Router = createBrowserRouter([
     element: <About />,
   },
   {
+    // Capture toutes les routes non définies et affiche le composant ErrorPage.
     path: "*",
     element: <ErrorPage />,
   },
 ],
-  {
-    future: { v7_relativeSplatPath: true }, // Activation du future flag pour les routes splat
+
+  { // Activation du future flag pour les routes splat
+    future: {
+      v7_fetcherPersist: true,
+      v7_normalizeFormMethod: true,
+      v7_partialHydration: true,
+      v7_relativeSplatPath: true,
+      v7_skipActionErrorRevalidation: true,
+      v7_startTransition: true,
+    },
   }
 );
 

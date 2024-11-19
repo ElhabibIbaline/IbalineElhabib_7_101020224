@@ -14,16 +14,17 @@ function Logement() {
   const [flat, setFlat] = useState(null);
   const [error, setError] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { //charger dynamiquement les données selon l'ID du logement passé dans l'URL et gérer les erreurs de manière appropriée
+    //Charger le fichier data.json et convertir les données en JSON
     fetch("/data.json")
       .then((res) => res.json())
-      .then((flats) => {
+      .then((flats) => { // Reçoit les données sous forme de tableau `flats` contenant les logements.
         // console.log("Données chargées :", flats); // Vérifiez les données
-        const flat = flats.find((flat) => flat.id === logementId); // Utiliser logementId pour trouver le logement
+        const flat = flats.find((flat) => flat.id === logementId); // Recherche dans le tableau le logement dont l'ID correspond à `logementId` extrait de l'URL.
         // console.log("Logement trouvé :", flat); // Vérifiez le logement trouvé
-        if (flat) {
-          setFlat(flat);
-          setError(false);
+        if (flat) {// Si un logement correspondant est trouvé :
+          setFlat(flat); // Met à jour l'état `flat` avec les données du logement trouvé.
+          setError(false); // Réinitialise l'état d'erreur à `false` pour indiquer qu'il n'y a pas d'erreur.
         } else {
           setError(true);
         }
@@ -32,10 +33,12 @@ function Logement() {
         console.error("Erreur lors du chargement des données :", err);
         setError(true);
       });
-  }, [logementId]);
+  }, [logementId]); // Spécifie que l'effet doit s'exécuter à chaque fois que `logementId` change.
 
 
   if (error) return <Navigate to="/error" />;
+
+  //Si flat est null : Affiche un message "Chargement..." jusqu'à ce que les données soient disponibles.
   if (flat === null) return <div>Chargement...</div>;
 
 

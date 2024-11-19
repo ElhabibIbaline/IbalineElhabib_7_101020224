@@ -1,5 +1,5 @@
 
-import NoPage from '../../components/Error/NoPage'
+import NoPage from '../../components/NoPage/NoPage'
 import Footer from '../../components/Footer/Footer'
 import Header from '../../components/Header/Header'
 import './ErrorPage.module.scss'
